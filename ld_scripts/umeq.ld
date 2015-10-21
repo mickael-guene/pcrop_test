@@ -5,8 +5,8 @@ ENTRY(_start)
 
 MEMORY
 {
- flash (rx)         : ORIGIN = 0x00008000, LENGTH = 16M
- flash_pcrop (!rx)  : ORIGIN = 0x01000000, LENGTH = 16M
+ flash (rx)         : ORIGIN = 0x00008000, LENGTH = 7M
+ flash_pcrop (!rx)  : ORIGIN = 0x00800000, LENGTH = 8M
  sram (rw)          : ORIGIN = 0x20000000, LENGTH = 16M
 }
 
