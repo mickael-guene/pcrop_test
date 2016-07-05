@@ -25,7 +25,7 @@ SECTIONS
   .gnu.version_r  : { *(.gnu.version_r) }
   .text.noread      :
     {
-        INPUT_SECTION_FLAGS (SHF_ARM_NOREAD) *(.text*)
+        INPUT_SECTION_FLAGS (SHF_ARM_PURECODE) *(.text*)
     } > flash_pcrop
   .rel.dyn        :
     {
